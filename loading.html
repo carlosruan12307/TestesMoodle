@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+          
+        #loader {
+            border: 12px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 12px solid #444444;
+            width: 70px;
+            height: 70px;
+            animation: spin 1s linear infinite;
+        }
+ 
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+ 
+        .center {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        .loading{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid p-5 banner-modulo d-sm-block d-none" style="
+        background-image: url(https://ead.unifor.br/ava/draftfile.php/1261884/user/draft/143718026/Banner_Intro-atual.png);
+      "></div>
+        
+<main class="container-fluid py-4 px-5 cor-texto">
+    <div class="content loading">
+        <img class="banner img-fluid d-block d-sm-none" src="https://ead.unifor.br/ava/draftfile.php/1261884/user/draft/143718026/Banner_Intro_mobile-atual.png" alt="">
+        <div class="mb-5 d-flex flex-column flex-md-row justify-content-center align-items-center">
+            <img src="https://ead.unifor.br/ava/draftfile.php/1261884/user/draft/143718026/Guia.svg" alt="" class="img-fluid mr-3 personagem-inicial order-2 order-md-1">
+            <div class="ml-0 mt-4 ml-md-3 balao balao-fala order-1 order-md-2">
+                <img class="triangulo-primeiro d-md-none" src="https://ead.unifor.br/ava/draftfile.php/1261884/user/draft/143718026/seta_baixo_box.svg" alt="">
+                <img class="triangulo-primeiro d-none d-md-block" src="https://ead.unifor.br/ava/draftfile.php/1261884/user/draft/143718026/seta_esquerda_box.svg" alt="">
+                <div class="d-none">
+                    <span id="hello" class="d-none ola">
+                    </span>
+                </div>
+                <div class="ml-0 ml-sm-3 p-4 ">
+                    <p id="textoTyping1" class="texto-ola">
+                    </p>
+                    <p id="textoTyping3" class="m-0 texto-boasvindas"></p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="mb-5">
+            <h2 class="mb-4 titulo">Como funcionam os módulos?</h2>
+            <p>
+                Nosso curso está dividido em 6 módulos autoinstrucionais, cada um focado numa área específica:
+            </p>
+            <ol class="mb-4">
+                <li>Responsabilidade Social;</li>
+                <li>Métodos de Ensino e Engajamento;</li>
+                <li>Comunicação e oratória;</li>
+                <li>Educação Inclusiva;</li>
+                <li>Projeto Aplicativo;</li>
+                <li>Avaliação.</li>
+            </ol>
+            <p>
+                É importante que você percorra por todos os módulos para desenvolver habilidades essenciais na sua atuação junto ao projeto de extensão.&nbsp;
+            </p>
+            <p>
+                Para saber mais sobre nossa formação, assista a seguir ao vídeo de apresentação da Profa. Fabiana Lira.
+            </p>
+        </div>
+        <div class="mb-4 d-flex flex-row justify-content-center align-items-center secao-video">
+            <div class="secao-video_galhos">
+                <img class="img-fluid galhos d-none d-sm-inline" src="https://ead.unifor.br/ava/draftfile.php/1261884/user/draft/143718026/Galhos.jpg" alt="">
+            </div>
+            <div class="col-sm-8 embed-responsive embed-responsive-16by9 video">
+                <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/831282510?h=8af113ab95" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+            </div>
+        </div>
+        <div class="mb-4">
+            <h2 class="mb-4 titulo">
+                O que é necessário para obter o certificado?
+            </h2>
+            <p>
+                Para receber o certificado (de 30 horas/aula) e aproveitar o curso como Atividades Complementares, é necessário:
+            </p>
+            <ul>
+                <li>
+                    estudar os conteúdos e realizar as tarefas propostas em cada módulo;
+                </li>
+                <li>conquistar, no mínimo, 6 distintivos no envio de tarefas;</li>
+                <li>receber nota mínima de 7 no trabalho final do curso.</li>
+            </ul>
+        </div>
+        <div class="mb-4 mb-md-5 d-flex flex-column flex-md-row justify-content-end align-items-center">
+            <div class="ml-0 ml-lg-3 mr-lg-3 mb-3 mb-lg-0 balao balao-fala balao-fala-especial">
+                <img class="triangulo-segundo d-md-none" src="https://ead.unifor.br/ava/draftfile.php/1261884/user/draft/143718026/seta_baixo_box.svg" alt="">
+                <img class="triangulo-segundo d-none d-md-block" src="https://ead.unifor.br/ava/draftfile.php/1261884/user/draft/143718026/seta_direita_box.svg" alt="">
+                <p id="textoTyping2" class="p-4 m-0 texto-balao"></p>
+            </div>
+            <img src="https://ead.unifor.br/ava/draftfile.php/1261884/user/draft/143718026/Guia2.svg" alt="" class="img-fluid mb-3 mb-md-0 mr-sm-3 personagem personagem-especial">
+        </div>
+        <div class="material">
+            <div class="px-5 py-3 m-0 titulo-secao">
+                <h2 class="ml-2 ml-sm-4 mb-0 pl-5 titulo-secao">
+                    Material complementar
+                </h2>
+            </div>
+            <img class="icone-secao icone-secao_materialComplementar" src="https://ead.unifor.br/ava/draftfile.php/1261884/user/draft/143718026/icone_livro.svg" alt="">
+        </div>
+        <div class="mb-0 px-4 pt-3 secao">
+            <p class="mb-5">
+                Baixe o Plano de Ensino para entender um pouco mais sobre a atuação do instrutor.
+            </p>
+            <div class="container mb-4">
+                <div class="row justify-content-center">
+                    <a href="https://ead.unifor.br/ava/mod/resource/view.php?id=2344885" class="col-6 col-md-4 d-flex align-items-center justify-content-between p-3 botao">
+                        <p class="mb-0 texto-botao">
+                            Baixar <span class="d-none d-sm-inline">o Plano de ensino</span>
+                        </p>
+                        <img src="https://ead.unifor.br/ava/draftfile.php/1261884/user/draft/143718026/button-icon.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div id="loader" class="center"></div>
+    
+</main>
+
+<!-- Balão + nome do usuario  -->
+<script>
+    var hello = document.querySelector("#hello");
+    hello.after(localStorage.getItem("userName"));
+    var name = localStorage.getItem("userName");
+
+    let time1 = 30;
+    let txt1 = "Olá " + name + "!";
+    let i1 = 0;
+
+    function typeWriter1() {
+        if (i1 < txt1.length) {
+            document.getElementById("textoTyping1").innerHTML += txt1.charAt(i1);
+            i1++;
+            setTimeout(typeWriter1, time1);
+        }
+    }
+
+    setTimeout(typeWriter1, 2000);
+</script>
+
+<script>
+    let time3 = 30;
+    let txt3 =
+        "Que bom ter você aqui! / O conteúdo foi pensado com muito cuidado e carinho para que você tenha a oportunidade de compartilhar seus conhecimentos e habilidades com a comunidade.";
+    let i3 = 0;
+
+    function typeWriter3() {
+        if (i3 < txt3.length) {
+            document.getElementById("textoTyping3").innerHTML += txt3
+                .charAt(i3)
+                .replace("/", " <br>");
+            i3++;
+            setTimeout(typeWriter3, time3);
+        }
+    }
+
+    setTimeout(typeWriter3, 3000);
+</script>
+
+<script>
+    let time2 = 30;
+    let txt2 =
+        "Queremos garantir que você esteja com a melhor preparação possível para liderar e inspirar os participantes do projeto. Estamos aqui para te apoiar em cada etapa do caminho. Não deixe de entrar em contato com a gente se precisar de ajuda.";
+    let i2 = 0;
+    var hold = 2000;
+
+    function typeWriter2() {
+        if (i2 < txt2.length) {
+            document.getElementById("textoTyping2").innerHTML += txt2
+                .charAt(i2)
+                .replace("/", " <br>");
+            i2++;
+            setTimeout(typeWriter2, time2);
+        }
+    }
+
+    setInterval(typeWriter2, 12000);
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- estilo  -->
+<script src="https://ead.unifor.br/ava/mod/resource/view.php?id=2344874"></script>
+<!-- script blocos  -->
+<script src="https://ead.unifor.br/ava/mod/resource/view.php?id=2344867"></script>
+<script>
+       
+    $(document).ready(() => {
+        $(".content").show()
+        $("#loader").remove()
+    })
+</script>
+</body>
+</html>
